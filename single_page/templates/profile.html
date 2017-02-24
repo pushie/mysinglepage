@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    $('.rename').click(function() {
+        var new_user_name = $('#new_username').val();
+        sessionStorage.setItem("username", new_user_name);
+
+        var value = sessionStorage.getItem("username");
+        $('.profile').html(value);
+    })
+</script>
+
+<div class="my-form">
+    <div class="container">
+        <div class="logo">
+            welcome
+            <div class="text">
+                <span class="word">on</span><span class="web"> your profile</span>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="new_username" placeholder="your new username">
+    <input type="submit" value="rename" class="rename">
+</div>
