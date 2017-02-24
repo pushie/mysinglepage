@@ -27,7 +27,6 @@ $(function() {
     $('.logout').click(function() {
         $('.my-form').removeClass('hide');
         $('.menu').addClass('hide');
-        $('.content').addClass('hide');
         sessionStorage.clear();
     })
 
